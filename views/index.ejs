@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 <html>
   <head>
     <title><%= title %></title>
@@ -34,7 +35,9 @@
 
   <div class="jumbotron">
       <div class="container">
-          ...
+          <form method='post' action='upload' enctype="multipart/form-data">
+              <input type='file' name='fileUploaded'>
+              <input type='submit'>
       </div>
   </div>
 
